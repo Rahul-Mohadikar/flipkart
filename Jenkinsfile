@@ -17,10 +17,10 @@ pipeline{
 			steps{
 			script{
 				if ( env.ENV == 'QA' ){
-				sh 'cp target/flipkart.war home/rahul/devops/apache-tomcat-9.0.88/webapps'
+				sh 'cp flipkart.war home/rahul/devops/apache-tomcat-9.0.88/webapps'
 				echo "deployment has been succesfully done!"}
 				else ( env.ENV == 'UAT' ){
-				sh 'cp target/flipkart.war home/rahul/devops/apache-tomcat-9.0.88/webapps'
+				sh 'cp flipkart.war home/rahul/devops/apache-tomcat-9.0.88/webapps'
 				echo "deployment has been successfully done!"}
 			}}}
 }}
