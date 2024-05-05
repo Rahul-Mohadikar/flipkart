@@ -6,7 +6,7 @@ pipeline{
 		pollSCM('* * * * *')
 		}
 	stages{
-		stage(cleanup workspace'){
+		stage('cleanup workspace'){
 			steps{
 				cleanWS()
 				echo "cleanup workspace for flipkart"
