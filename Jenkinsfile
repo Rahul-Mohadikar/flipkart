@@ -8,7 +8,7 @@ pipeline{
 	stages{
 		stage('checkout'){
 			steps{
-				checkout SCM}}
+				checkout scm}}
 		stage('build'){
 			steps{
 			sh 'home/rahul/devops/apache-maven-3.9.6'
